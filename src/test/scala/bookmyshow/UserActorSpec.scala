@@ -5,9 +5,7 @@ import akka.testkit.{ImplicitSender, TestKit}
 import edu.knoldus.bookmyshow.{BookSeat, UserActor}
 import org.scalatest.{BeforeAndAfterAll, MustMatchers, WordSpecLike}
 
-/**
-  * Created by gitika on 19/3/17.
-  */
+
 class UserActorSpec extends TestKit(ActorSystem("bookmyshow")) with WordSpecLike
   with BeforeAndAfterAll with MustMatchers with ImplicitSender {
 

@@ -14,7 +14,7 @@ class ParentActor(childRef: ActorRef, fileName: String) extends Actor with Actor
   override def receive = {
     case StartReading() =>
       if (running)
-        log.info("Error! Already started!")
+      log.info("Error! Already started!")
       else {
         running = true
         senderActor = Some(sender)
